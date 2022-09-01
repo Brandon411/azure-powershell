@@ -82,32 +82,32 @@ This should include PowerShell-help style syntax descriptions of all new and cha
 
 ```powershell
 NAME
-	Get-AzureEventGridPartnerConfiguration
+    Get-AzureEventGridPartnerConfiguration
 
 SYNOPSIS
-	Gets a partner configuration or lists all partner configurations in the current Azure subscription.
+    Gets a partner configuration or lists all partner configurations in the current Azure subscription.
 
 PS C:\> Get-AzureEventGridPartnerConfiguration 
-	[-ResourceGroupName] <String> 
-	[-ODataQuery <String>] 
-	[-Top <Int32>] 
-	[<CommonParameters>]
+    [-ResourceGroupName] <String> 
+    [-ODataQuery <String>] 
+    [-Top <Int32>] 
+    [<CommonParameters>]
 
 ```
 
 ```powershell
 NAME
-	Get-AzureEventGridPartnerRegistration
+    Get-AzureEventGridPartnerRegistration
 
 SYNOPSIS
-	Gets a partner registration or lists all partner registrations in the current Azure subscription.
+    Gets a partner registration or lists all partner registrations in the current Azure subscription.
 
 PS C:\> Get-AzureEventGridPartnerRegistration 
-	[-ResourceGroupName] <String> 
-	[-Name] <string> 
-	[-ODataQuery <String>] 
-	[-Top <Int32>] 
-	[<CommonParameters>]
+    [-ResourceGroupName] <String> 
+    [-Name] <string> 
+    [-ODataQuery <String>] 
+    [-Top <Int32>] 
+    [<CommonParameters>]
 
 PS C:\> Get-AzureEventGridPartnerRegistration [-ResourceId] <String> [-ODataQuery <String>] [-Top <Int32>] [<CommonParameters>]
 
@@ -115,81 +115,81 @@ PS C:\> Get-AzureEventGridPartnerRegistration [-ResourceId] <String> [-ODataQuer
 
 ```powershell
 NAME
-	Get-AzureEventGridPartnerDestination
+    Get-AzureEventGridPartnerDestination
 
 SYNOPSIS
-	Gets a partner destination or lists all partner registrations in the current Azure subscription.
+    Gets a partner destination or lists all partner destinations in the current Azure subscription.
 
 PS C:\> Get-AzureEventGridPartnerDestination 
-	[-ResourceGroupName] <String> 
-	[-Name] <string> 
-	[-ODataQuery <String>] 
-	[-Top <Int32>] 
-	[<CommonParameters>]
+    [-ResourceGroupName] <String> 
+    [-Name] <string> 
+    [-ODataQuery <String>] 
+    [-Top <Int32>] 
+    [<CommonParameters>]
 
 PS C:\> Get-AzureEventGridPartnerDestination 
-	[-ResourceId] <String> 
-	[-Name] <string> 
-	[-ODataQuery <String>] 
-	[-Top <Int32>] 
-	[<CommonParameters>]
+    [-ResourceId] <String> 
+    [-Name] <string> 
+    [-ODataQuery <String>] 
+    [-Top <Int32>] 
+    [<CommonParameters>]
 
 ```
 
 ```powershell
 NAME
-	Get-AzureEventGridVerifiedPartner
+    Get-AzureEventGridVerifiedPartner
 
 SYNOPSIS
-	Gets a verified partner or lists all verified partners in the current tenant.
+    Gets a verified partner or lists all verified partners in the current tenant.
 
 PS C:\> Get-AzureEventGridVerifiedPartner 
-	[-VerifiedPartnerName <String>] 
-	[-ODataQuery <String>] 
-	[-Top <Int32>] 
-	[<CommonParameters>]
+    [-VerifiedPartnerName <String>] 
+    [-ODataQuery <String>] 
+    [-Top <Int32>] 
+    [<CommonParameters>]
 
 ```
 
 ```powershell
 NAME
-	Get-AzureEventGridPartnerNamespace
+    Get-AzureEventGridPartnerNamespace
 
 SYNOPSIS
-	Gets a partner namespace or lists all partner namespaces in the current Azure subscription.
+    Gets a partner namespace or lists all partner namespaces in the current Azure subscription.
 
 PS C:\> Get-AzureEventGridPartnerNamespace 
-	[-ResourceGroupName] <String> 
-	[-Name] <String> 
-	[-ODataQuery <String>] 
-	[-Top <Int32>]
+    [-ResourceGroupName] <String> 
+    [-Name] <String> 
+    [-ODataQuery <String>] 
+    [-Top <Int32>]
     [<CommonParameters>]
 
 PS C:\> Get-AzureEventGridPartnerNamespace 
-	[-ResourceId] <String> 
-	[-ODataQuery <String>] 
-	[-Top <Int32>] 
-	[<CommonParameters>]
+    [-ResourceId] <String> 
+    [-ODataQuery <String>] 
+    [-Top <Int32>] 
+    [<CommonParameters>]
 
 ```
 
 ```powershell
 NAME
-	Get-AzureEventGridChannel
+    Get-AzureEventGridChannel
 
 SYNOPSIS
-	Gets a channel or lists all channels under a partner namespace.
+    Gets a channel or lists all channels under a partner namespace.
 
 PS C:\> Get-AzureEventGridChannel 
-	[-ResourceGroupName] <String> 
-	[-PartnerNamespaceName] <String> 
-	[-Name] <String> 
-	[-ODataQuery <String>] 
-	[-Top <Int32>]
+    [-ResourceGroupName] <String> 
+    [-PartnerNamespaceName] <String> 
+    [-Name] <String> 
+    [-ODataQuery <String>] 
+    [-Top <Int32>]
     [<CommonParameters>]
 
 PS C:\> Get-AzureEventGridChannel 
-	[-ResourceId] <String>
+    [-ResourceId] <String>
     [-ODataQuery <String>]
     [-Top <Int32>]
     [<CommonParameters>]
@@ -198,14 +198,14 @@ PS C:\> Get-AzureEventGridChannel
 
 ```powershell
 NAME
-	Get-AzureEventGridPartnerNamespaceKey
+    Get-AzureEventGridPartnerNamespaceKey
 
 SYNOPSIS
-	Lists all keys under a partner namespace.
+    Lists all keys of a partner namespace.
 
 PS C:\> Get-AzureEventGridPartnerNamespaceKey 
-	[-ResourceGroupName] <String> 
-	[-PartnerNamespaceName] <String>
+    [-ResourceGroupName] <String> 
+    [-PartnerNamespaceName] <String>
     [-ODataQuery <String>]
     [-Top <Int32>]
     [<CommonParameters>]
@@ -214,20 +214,20 @@ PS C:\> Get-AzureEventGridPartnerNamespaceKey
 
 ```powershell
 NAME
-	Get-AzureEventGridPartnerTopic
+    Get-AzureEventGridPartnerTopic
 
 SYNOPSIS
-	Gets a partner topic or lists all partner topics in the current Azure subscription.
+    Gets a partner topic or lists all partner topics in the current Azure subscription.
 
 PS C:\> Get-AzureEventGridPartnerTopic 
-	[-ResourceGroupName] <String> 
-	[-Name] <String>
+    [-ResourceGroupName] <String> 
+    [-Name] <String>
     [-ODataQuery <String>]
     [-Top <Int32>]
     [<CommonParameters>]
 
 PS C:\> Get-AzureEventGridPartnerTopic
-	[-ResourceId] <String>
+    [-ResourceId] <String>
     [-ODataQuery <String>]
     [-Top <Int32>]
     [<CommonParameters>]
@@ -236,13 +236,13 @@ PS C:\> Get-AzureEventGridPartnerTopic
 
 ```powershell
 NAME
-	Get-AzureEventGridPartnerTopicEventSubscription
+    Get-AzureEventGridPartnerTopicEventSubscription
 
 SYNOPSIS
-	Gets the details of a partner topic event subscription or lists all event subscriptions under a partner topic.
+    Gets the details of a partner topic event subscription or lists all event subscriptions under a partner topic.
 
 PS C:\> Get-AzureEventGridPartnerTopicEventSubscription
-	[-ResourceGroupName] <String>
+    [-ResourceGroupName] <String>
     [-PartnerTopicName] <String>
     [-Name] <String>
     [-ODataQuery <String>]
@@ -250,7 +250,7 @@ PS C:\> Get-AzureEventGridPartnerTopicEventSubscription
     [<CommonParameters>]
 
 PS C:\> Get-AzureEventGridPartnerTopicEventSubscription 
-	[-ResourceId] <String>
+    [-ResourceId] <String>
     [-ODataQuery <String>]
     [-Top <Int32>] 
     [<CommonParameters>]
@@ -259,13 +259,13 @@ PS C:\> Get-AzureEventGridPartnerTopicEventSubscription
 
 ```powershell
 NAME
-	Get-AzureEventGridTopicEventSubscription
+    Get-AzureEventGridTopicEventSubscription
 
 SYNOPSIS
-	Gets the details of a topic event subscription or lists all event subscriptions under a topic.
+    Gets the details of a topic event subscription or lists all event subscriptions under a topic.
 
 PS C:\> Get-AzureEventGridTopicEventSubscription 
-	[-ResourceGroupName] <String>
+    [-ResourceGroupName] <String>
     [-TopicName] <String>
     [-Name] <String>
     [-ODataQuery <String>]
@@ -273,7 +273,7 @@ PS C:\> Get-AzureEventGridTopicEventSubscription
     [<CommonParameters>]
 
 PS C:\> Get-AzureEventGridTopicEventSubscription 
-	[-ResourceId] <String>
+    [-ResourceId] <String>
     [-ODataQuery <String>]
     [-Top <Int32>]
     [<CommonParameters>]
@@ -282,13 +282,13 @@ PS C:\> Get-AzureEventGridTopicEventSubscription
 
 ```powershell
 NAME
-	Get-AzureEventGridDomainEventSubscription
+    Get-AzureEventGridDomainEventSubscription
 
 SYNOPSIS
-	Gets the details of a topic event subscription or lists all event subscriptions under a domain.
+    Gets the details of a topic event subscription or lists all event subscriptions under a domain.
 
 PS C:\> Get-AzureEventGridDomainEventSubscription 
-	[-ResourceGroupName] <String>
+    [-ResourceGroupName] <String>
     [-DomainName] <String>
     [-Name] <String>
     [-ODataQuery <String>]
@@ -296,7 +296,7 @@ PS C:\> Get-AzureEventGridDomainEventSubscription
     [<CommonParameters>]
 
 PS C:\> Get-AzureEventGridDomainEventSubscription 
-	[-ResourceId] <String>
+    [-ResourceId] <String>
     [-ODataQuery <String>]
     [-Top <Int32>] 
     [<CommonParameters>]
@@ -305,13 +305,13 @@ PS C:\> Get-AzureEventGridDomainEventSubscription
 
 ```powershell
 NAME
-	Get-AzureEventGridDomainTopicEventSubscription
+    Get-AzureEventGridDomainTopicEventSubscription
 
 SYNOPSIS
-	Gets the details of a domain topic event subscription or lists all event subscriptions under a domain topic.
+    Gets the details of a domain topic event subscription or lists all event subscriptions under a domain topic.
 
 PS C:\> Get-AzureEventGridDomainTopicEventSubscription 
-	[-ResourceGroupName] <String>
+    [-ResourceGroupName] <String>
     [-DomainName] <String>
     [-TopicName] <String>
     [-Name] <String>
@@ -320,7 +320,7 @@ PS C:\> Get-AzureEventGridDomainTopicEventSubscription
     [<CommonParameters>]
 
 PS C:\> Get-AzureEventGridDomainTopicEventSubscription 
-	[-ResourceId] <String>
+    [-ResourceId] <String>
     [-ODataQuery <String>]
     [-Top <Int32>]
     [<CommonParameters>]
@@ -330,13 +330,13 @@ PS C:\> Get-AzureEventGridDomainTopicEventSubscription
 
 ```powershell
 NAME
-	New-AzureEventGridPartnerConfiguration
+    New-AzureEventGridPartnerConfiguration
 
 SYNOPSIS
-	Creates a new partner configuration.
+    Creates a new partner configuration.
 
 PS C:\> New-AzureEventGridPartnerConfiguration 
-	[-ResourceGroupName] <String>
+    [-ResourceGroupName] <String>
     [-AuthorizedPartner <PartnerAuthorization[]>]
     [-DefaultMaxExpirationTimeInDays <Int32>]
     [-Tags <Hashtable>]
@@ -347,13 +347,13 @@ PartnerAuthorization = <String, DateTime>
 
 ```powershell
 NAME
-	New-AzureEventGridPartnerRegistration
+    New-AzureEventGridPartnerRegistration
 
 SYNOPSIS
-	Creates a new partner registration.
+    Creates a new partner registration.
 
 PS C:\> New-AzureEventGridPartnerRegistration 
-	[-ResourceGroupName] <String>
+    [-ResourceGroupName] <String>
     [-Name] <String>
     [-AuthorizedSubscriptionIds <String[]>]
     [-Tags <Hashtable>]
@@ -363,34 +363,72 @@ PS C:\> New-AzureEventGridPartnerRegistration
 
 ```powershell
 NAME
-	New-AzureEventGridPartnerDestination
+    New-AzureEventGridPartnerDestination
 
 SYNOPSIS
-	Creates a new partner destination.
+    Creates a new partner destination.
 
 PS C:\> New-AzureEventGridPartnerDestination 
-	[-ResourceGroupName] <String> 
-	[-Name] <String> 
-	[-Location] <String> 
-	[-ActivationExpirationDate <DateTime>] 
-	[-EndpointServiceContext <String>] 
-	[-EndpointBaseUrl <String>] 
-	[-MessageForActivation <String>] 
-	[-PartnerRegistrationImmutableId <String>] 
-	[-Tags <Hashtable>] 
-	[<CommonParameters>]
+    [-ResourceGroupName] <String> 
+    [-Name] <String> 
+    [-Location] <String> 
+    [-ActivationExpirationDate <DateTime>] 
+    [-EndpointServiceContext <String>] 
+    [-EndpointBaseUrl <String>] 
+    [-MessageForActivation <String>] 
+    [-PartnerRegistrationImmutableId <String>] 
+    [-Tags <Hashtable>] 
+    [<CommonParameters>]
  
+PS C:\> New-AzureEventGridPartnerDestination 
+    [-ResourceId] <String> 
+    [-ActivationExpirationDate <DateTime>] 
+    [-EndpointServiceContext <String>] 
+    [-EndpointBaseUrl <String>] 
+    [-MessageForActivation <String>] 
+    [-PartnerRegistrationImmutableId <String>] 
+    [-Tags <Hashtable>] 
+    [<CommonParameters>]
+
 ```
 
 ```powershell
 NAME
-	New-AzureEventGridPartnerNamespace
+    New-AzureEventGridPartnerTopic
 
 SYNOPSIS
-	Creates a new partner namespace.
+    Creates a new partner destination.
+
+PS C:\> New-AzureEventGridPartnerTopic 
+    [-ResourceGroupName] <String> 
+    [-Name] <String> 
+    [-Location] <String>
+    [-InputSchema <Hashtable>]
+    [-IdentityType <String>]
+    [-IdentityId <String[]>]
+    [-EventTypeKind <{Inline}>]
+    [-InlineEventType <InlineEvent[]>]
+    [-ExpirationTimeIfNotActivated <DateTime>] 
+    [-MessageForActivation <String>] 
+    [-PartnerRegistrationImmutableId <String>]
+    [-PartnerTopicFriendlyDescription <String>]
+    [-Source <String>]
+    [-Tags <Hashtable>]
+    [<CommonParameters>]
+
+InlineEvent = [-Key] <String> [-Description <String>] [-DocumentationUrl <String>] [-DataSchemaUrl <String>]
+
+```
+
+```powershell
+NAME
+    New-AzureEventGridPartnerNamespace
+
+SYNOPSIS
+    Creates a new partner namespace.
 
 PS C:\> New-AzureEventGridPartnerNamespace 
-	[-ResourceGroupName] <String>
+    [-ResourceGroupName] <String>
     [-Name] <String>
     [-PartnerRegistrationId] <String>
     [-Location <String>]
@@ -401,13 +439,13 @@ PS C:\> New-AzureEventGridPartnerNamespace
 
 ```powershell
 NAME
-	New-AzureEventGridChannel
+    New-AzureEventGridChannel
 
 SYNOPSIS
-	Creates a new channel.
+    Creates a new channel.
 
 PS C:\> New-AzureEventGridChannel 
-	[-ResourceGroupName] <String>
+    [-ResourceGroupName] <String>
     [-PartnerNamespaceName] <String>
     [-Name] 
     [-DestinationSubscriptionId] <String>
@@ -432,10 +470,10 @@ InlineEvent = [-Key] <String> [-Description <String>] [-DocumentationUrl <String
 
 ```powershell
 NAME
-	New-AzureEventGridTopicEventSubscription
+    New-AzureEventGridTopicEventSubscription
 
 SYNOPSIS
-	Creates a new event subscription for a topic.
+    Creates a new event subscription for a topic.
 
 PS C:\> New-AzureEventGridTopicEventSubscription
    -EventSubscriptionName <String>
@@ -470,10 +508,10 @@ PS C:\> New-AzureEventGridTopicEventSubscription
 
 ```powershell
 NAME
-	New-AzureEventGridTopicEventSubscription
+    New-AzureEventGridTopicEventSubscription
 
 SYNOPSIS
-	Creates a new event subscription for a topic.
+    Creates a new event subscription for a topic.
 
 PS C:\> New-AzureEventGridTopicEventSubscription
    -EventSubscriptionName <String>
@@ -509,10 +547,10 @@ PS C:\> New-AzureEventGridTopicEventSubscription
 
 ```powershell
 NAME
-	New-AzureEventGridDomainEventSubscription
+    New-AzureEventGridDomainEventSubscription
 
 SYNOPSIS
-	Creates a new event subscription for a domain.
+    Creates a new event subscription for a domain.
 
 PS C:\> New-AzureEventGridDomainEventSubscription
    -EventSubscriptionName <String>
@@ -547,10 +585,10 @@ PS C:\> New-AzureEventGridDomainEventSubscription
 
 ```powershell
 NAME
-	New-AzureEventGridDomainTopicEventSubscription
+    New-AzureEventGridDomainTopicEventSubscription
 
 SYNOPSIS
-	Creates a new event subscription for a domain topic.
+    Creates a new event subscription for a domain topic.
 
 PS C:\> New-AzureEventGridDomainTopicEventSubscription
    -EventSubscriptionName <String>
@@ -586,48 +624,70 @@ PS C:\> New-AzureEventGridDomainTopicEventSubscription
 
 ```powershell
 NAME
-	Update-AzureEventGridPartnerConfiguration
+    Update-AzureEventGridPartnerConfiguration
 
 SYNOPSIS
-	Updates the details of a partner configuration.
+    Updates the details of a partner configuration.
 
 PS C:\> Update-AzureEventGridPartnerConfiguration 
-	-ResourceGroupName <String>
-	[-DefaultMaxExpirationTimeInDays <Int32]
-	[-Tags <Hashtable]
+    -ResourceGroupName <String>
+    [-DefaultMaxExpirationTimeInDays <Int32]
+    [-Tags <Hashtable]
  
 ```
 
 ```powershell
 NAME
-	Update-AzEventGridPartnerDestination
+    Update-AzEventGridPartnerDestination
 
 SYNOPSIS
-	Updates the details of a partner destination.
+    Updates the details of a partner destination.
 
 PS C:\> Update-AzEventGridPartnerDestination 
-	[-ResourceGroupName] <String>
-	[-Name] <String>
-	[-Tags <Hashtable]
-	
+    [-ResourceGroupName] <String>
+    [-Name] <String>
+    [-Tags <Hashtable]
+    
 PS C:\> Update-AzEventGridPartnerDestination 
-	[-ResourceId] <String>
-	[-Tags <Hashtable]
+    [-ResourceId] <String>
+    [-Tags <Hashtable]
  
 ```
 
 ```powershell
 NAME
-	Update-AzEventGridChannel
+    Update-AzEventGridPartnerTopic
 
 SYNOPSIS
-	Updates the details of a channel.
+    Updates the details of a partner topic.
+
+PS C:\> Update-AzEventGridPartnerTopic
+    [-ResourceGroupName] <String>
+    [-Name] <String>
+    [-IdentityType <String>]
+    [-IdentityId <String[]>]
+    [-Tags <Hashtable]
+    
+PS C:\> Update-AzEventGridPartnerTopic
+    [-ResourceId] <String>
+    [-IdentityType <String>]
+    [-IdentityId <String[]>]
+    [-Tags <Hashtable]
+ 
+```
+
+```powershell
+NAME
+    Update-AzEventGridChannel
+
+SYNOPSIS
+    Updates the details of a channel.
 
 PS C:\> Update-AzEventGridChannel 
-	[-ResourceGroupName] <String> 
-	[-PartnerNamespaceName] <String> 
-	[-Name] <String>
-	[-AadApplicationId <String>]
+    [-ResourceGroupName] <String> 
+    [-PartnerNamespaceName] <String> 
+    [-Name] <String>
+    [-AadApplicationId <String>]
     [-AadTenantId <String>]
     [-ActivationExpirationDate <DateTime>] 
     [-EndpointBaseUrl <String>] 
@@ -635,17 +695,17 @@ PS C:\> Update-AzEventGridChannel
     [-EventTypeKind <{Inline}>]
     [-InlineEventType <InlineEvent[]>] 
     [<CommonParameters>]
-	
+    
 InlineEvent = [-Key] <String> [-Description <String>] [-DocumentationUrl <String>] [-DataSchemaUrl <String>]
  
 ```
 
 ```powershell
 NAME
-	Update-AzEventGridPartnerTopicEventSubscription
+    Update-AzEventGridPartnerTopicEventSubscription
 
 SYNOPSIS
-	Updates the details of a partner topic event subscription.
+    Updates the details of a partner topic event subscription.
 
 PS C:\> Update-AzEventGridPartnerTopicEventSubscription
       -EventSubscriptionName <String>
@@ -672,10 +732,10 @@ PS C:\> Update-AzEventGridPartnerTopicEventSubscription
 
 ```powershell
 NAME
-	Update-AzEventGridTopicEventSubscription
+    Update-AzEventGridTopicEventSubscription
 
 SYNOPSIS
-	Updates the details of a topic event subscription.
+    Updates the details of a topic event subscription.
 
 PS C:\> Update-AzEventGridTopicEventSubscription
       -EventSubscriptionName <String>
@@ -702,10 +762,10 @@ PS C:\> Update-AzEventGridTopicEventSubscription
 
 ```powershell
 NAME
-	Update-AzEventGridDomainEventSubscription
+    Update-AzEventGridDomainEventSubscription
 
 SYNOPSIS
-	Updates the details of a domain event subscription.
+    Updates the details of a domain event subscription.
 
 PS C:\> Update-AzEventGridDomainEventSubscription
       -EventSubscriptionName <String>
@@ -732,10 +792,10 @@ PS C:\> Update-AzEventGridDomainEventSubscription
 
 ```powershell
 NAME
-	Update-AzEventGridDomainTopicEventSubscription
+    Update-AzEventGridDomainTopicEventSubscription
 
 SYNOPSIS
-	Updates the details of a domain topic event subscription.
+    Updates the details of a domain topic event subscription.
 
 PS C:\> Update-AzEventGridDomainTopicEventSubscription
       -EventSubscriptionName <String>
@@ -762,296 +822,296 @@ PS C:\> Update-AzEventGridDomainTopicEventSubscription
 
 ```powershell
 NAME
-	Remove-AzEventGridPartnerRegistration
+    Remove-AzEventGridPartnerRegistration
 
 SYNOPSIS
-	Removes a partner registration.
+    Removes a partner registration.
 
 PS C:\> Remove-AzEventGridPartnerRegistration 
-	[-ResourceGroupName] <String> 
-	[-Name] <String>
-	[-Confirm] 
-	[<CommonParameters>]
-	
+    [-ResourceGroupName] <String> 
+    [-Name] <String>
+    [-Confirm] 
+    [<CommonParameters>]
+    
 PS C:\> Remove-AzEventGridPartnerRegistration 
-	[-ResourceId] <String> 
-	[-Confirm] 
-	[<CommonParameters>]
-	
+    [-ResourceId] <String> 
+    [-Confirm] 
+    [<CommonParameters>]
+    
 ```
 
 ```powershell
 NAME
-	Remove-AzEventGridPartnerConfiguration
+    Remove-AzEventGridPartnerConfiguration
 
 SYNOPSIS
-	Removes a partner configuration.
+    Removes a partner configuration.
 
 PS C:\> Remove-AzureEventGridPartnerConfiguration 
-	[-ResourceGroupName] <String> 
-	[-Confirm] 
-	[<CommonParameters>]
-	
+    [-ResourceGroupName] <String> 
+    [-Confirm] 
+    [<CommonParameters>]
+    
 ```
 
 ```powershell
 NAME
-	Remove-AzEventGridPartnerDestination
+    Remove-AzEventGridPartnerDestination
 
 SYNOPSIS
-	Removes a partner destination.
+    Removes a partner destination.
 
 PS C:\> Remove-AzEventGridPartnerDestination 
-	[-ResourceGroupName] <String> 
-	[-Name] <String>
-	[-Confirm] 
-	[<CommonParameters>]
-	
+    [-ResourceGroupName] <String> 
+    [-Name] <String>
+    [-Confirm] 
+    [<CommonParameters>]
+    
 PS C:\> Remove-AzEventGridPartnerDestination 
-	[-ResourceId] <String> 
-	[-Confirm] 
-	[<CommonParameters>]
-	
+    [-ResourceId] <String> 
+    [-Confirm] 
+    [<CommonParameters>]
+    
 ```
 
 ```powershell
 NAME
-	Remove-AzEventGridPartnerNamespace
+    Remove-AzEventGridPartnerNamespace
 
 SYNOPSIS
-	Removes a partner namespace.
+    Removes a partner namespace.
 
 PS C:\> Remove-AzEventGridPartnerNamespace 
-	[-ResourceGroupName] <String> 
-	[-Name] <String>
-	[-Confirm] 
-	[<CommonParameters>]
-	
+    [-ResourceGroupName] <String> 
+    [-Name] <String>
+    [-Confirm] 
+    [<CommonParameters>]
+    
 PS C:\> Remove-AzEventGridPartnerNamespace 
-	[-ResourceId] <String> 
-	[-Confirm] 
-	[<CommonParameters>]
-	
+    [-ResourceId] <String> 
+    [-Confirm] 
+    [<CommonParameters>]
+    
 ```
 
 ```powershell
 NAME
-	Remove-AzEventGridChannel
+    Remove-AzEventGridChannel
 
 SYNOPSIS
-	Removes a channel.
+    Removes a channel.
 
 PS C:\> Remove-AzEventGridChannel 
-	[-ResourceGroupName] <String> 
-	[-PartnerNamespaceName] <String>
-	[-Name] <String>
-	[-Confirm] 
-	[<CommonParameters>]
-	
+    [-ResourceGroupName] <String> 
+    [-PartnerNamespaceName] <String>
+    [-Name] <String>
+    [-Confirm] 
+    [<CommonParameters>]
+    
 PS C:\> Remove-AzEventGridChannel 
-	[-ResourceId] <String> 
-	[-Confirm] 
-	[<CommonParameters>]
-	
+    [-ResourceId] <String> 
+    [-Confirm] 
+    [<CommonParameters>]
+    
 ```
 
 ```powershell
 NAME
-	Remove-AzEventGridPartnerTopic
+    Remove-AzEventGridPartnerTopic
 
 SYNOPSIS
-	Removes a partner topic.
+    Removes a partner topic.
 
 PS C:\> Remove-AzEventGridPartnerTopic 
-	[-ResourceGroupName] <String> 
-	[-Name] <String>
-	[-Confirm] 
-	[<CommonParameters>]
-	
+    [-ResourceGroupName] <String> 
+    [-Name] <String>
+    [-Confirm] 
+    [<CommonParameters>]
+    
 PS C:\> Remove-AzEventGridPartnerTopic 
-	[-ResourceId] <String> 
-	[-Confirm] 
-	[<CommonParameters>]
-	
+    [-ResourceId] <String> 
+    [-Confirm] 
+    [<CommonParameters>]
+    
 ```
 
 ```powershell
 NAME
-	Remove-AzEventGridTopicEventSubscription
+    Remove-AzEventGridTopicEventSubscription
 
 SYNOPSIS
-	Removes a topic event subscription.
+    Removes a topic event subscription.
 
 PS C:\> Remove-AzEventGridTopicEventSubscription 
-	[-ResourceGroupName] <String> 
-	[-TopicName] <String>
-	[-Name] <String>
-	[-Confirm] 
-	[<CommonParameters>]
-	
+    [-ResourceGroupName] <String> 
+    [-TopicName] <String>
+    [-Name] <String>
+    [-Confirm] 
+    [<CommonParameters>]
+    
 PS C:\> Remove-AzEventGridTopicEventSubscription 
-	[-ResourceId] <String> 
-	[-Confirm] 
-	[<CommonParameters>]
-	
+    [-ResourceId] <String> 
+    [-Confirm] 
+    [<CommonParameters>]
+    
 ```
 
 ```powershell
 NAME
-	Remove-AzEventGridDomainEventSubscription
+    Remove-AzEventGridDomainEventSubscription
 
 SYNOPSIS
-	Removes a domain event subscription.
+    Removes a domain event subscription.
 
 PS C:\> Remove-AzEventGridDomainEventSubscription 
-	[-ResourceGroupName] <String> 
-	[-DomainName] <String>
-	[-Name] <String>
-	[-Confirm] 
-	[<CommonParameters>]
-	
+    [-ResourceGroupName] <String> 
+    [-DomainName] <String>
+    [-Name] <String>
+    [-Confirm] 
+    [<CommonParameters>]
+    
 PS C:\> Remove-AzEventGridDomainEventSubscription 
-	[-ResourceId] <String> 
-	[-Confirm] 
-	[<CommonParameters>]
-	
+    [-ResourceId] <String> 
+    [-Confirm] 
+    [<CommonParameters>]
+    
 ```
 
 ```powershell
 NAME
-	Remove-AzEventGridDomainTopicEventSubscription
+    Remove-AzEventGridDomainTopicEventSubscription
 
 SYNOPSIS
-	Removes a domain topic event subscription.
+    Removes a domain topic event subscription.
 
 PS C:\> Remove-AzEventGridDomainTopicEventSubscription 
-	[-ResourceGroupName] <String> 
-	[-DomainName] <String>
-	[-TopicName] <String>
-	[-Name] <String>
-	[-Confirm] 
-	[<CommonParameters>]
-	
+    [-ResourceGroupName] <String> 
+    [-DomainName] <String>
+    [-TopicName] <String>
+    [-Name] <String>
+    [-Confirm] 
+    [<CommonParameters>]
+    
 PS C:\> Remove-AzEventGridDomainTopicEventSubscription 
-	[-ResourceId] <String> 
-	[-Confirm] 
-	[<CommonParameters>]
-	
+    [-ResourceId] <String> 
+    [-Confirm] 
+    [<CommonParameters>]
+    
 ```
 
 ```powershell
 NAME
-	Remove-AzEventGridPartnerTopicEventSubscription
+    Remove-AzEventGridPartnerTopicEventSubscription
 
 SYNOPSIS
-	Removes a domain topic event subscription.
+    Removes a domain topic event subscription.
 
 PS C:\> Remove-AzEventGridPartnerTopicEventSubscription 
-	[-ResourceGroupName] <String> 
-	[-PartnerTopicName] <String>
-	[-Name] <String>
-	[-Confirm] 
-	[<CommonParameters>]
-	
+    [-ResourceGroupName] <String> 
+    [-PartnerTopicName] <String>
+    [-Name] <String>
+    [-Confirm] 
+    [<CommonParameters>]
+    
 PS C:\> Remove-AzEventGridPartnerTopicEventSubscription 
-	[-ResourceId] <String> 
-	[-Confirm] 
-	[<CommonParameters>]
-	
+    [-ResourceId] <String> 
+    [-Confirm] 
+    [<CommonParameters>]
+    
 ```
 
 ```powershell
 NAME
-	Authorize-AzEventGridPartnerConfiguration
+    Authorize-AzEventGridPartnerConfiguration
 
 SYNOPSIS
-	Authorizes a partner configuration.
+    Authorizes a partner configuration.
 
 PS C:\> Authorize-AzEventGridPartnerConfiguration
-	[-ResourceGroupName] <String> 
-	[-AuthorizationExpirationDate <DateTime>]
-	[-PartnerName <String>]
+    [-ResourceGroupName] <String> 
+    [-AuthorizationExpirationDate <DateTime>]
+    [-PartnerName <String>]
     [-PartnerRegistrationImmutableId <String>]
-	[<CommonParameters>]
-	
+    [<CommonParameters>]
+    
 ```
 
 ```powershell
 NAME
-	Unauthorize-AzEventGridPartnerConfiguration
+    Unauthorize-AzEventGridPartnerConfiguration
 
 SYNOPSIS
-	Unauthorizes a partner configuration.
+    Unauthorizes a partner configuration.
 
 PS C:\> Unauthorize-AzEventGridPartnerConfiguration
-	[-ResourceGroupName] <String> 
-	[-AuthorizationExpirationDate <DateTime>]
-	[-PartnerName <String>]
+    [-ResourceGroupName] <String> 
+    [-AuthorizationExpirationDate <DateTime>]
+    [-PartnerName <String>]
     [-PartnerRegistrationImmutableId <String>]
-	[<CommonParameters>]
-	
+    [<CommonParameters>]
+    
 ```
 
 ```powershell
 NAME
-	Activate-AzEventGridPartnerDestination
+    Activate-AzEventGridPartnerDestination
 
 SYNOPSIS
-	Activates a partner destination.
+    Activates a partner destination.
 
 PS C:\> Activate-AzEventGridPartnerDestination
-	[-ResourceGroupName] <String> 
-	[-Name] <String>
+    [-ResourceGroupName] <String> 
+    [-Name] <String>
     [<CommonParameters>]
-	
+    
 PS C:\> Activate-AzEventGridPartnerDestination
-	[-ResourceId] <String> 
+    [-ResourceId] <String> 
     [<CommonParameters>]
-	
+    
 ```
 
 ```powershell
 NAME
-	Activate-AzEventGridPartnerTopic
+    Activate-AzEventGridPartnerTopic
 
 SYNOPSIS
-	Activates a partner topic.
+    Activates a partner topic.
 
 PS C:\> Activate-AzEventGridPartnerTopic
-	[-ResourceGroupName] <String> 
-	[-Name] <String>
+    [-ResourceGroupName] <String> 
+    [-Name] <String>
     [<CommonParameters>]
-	
+    
 PS C:\> Activate-AzEventGridPartnerTopic
-	[-ResourceId] <String> 
+    [-ResourceId] <String> 
     [<CommonParameters>]
-	
+    
 ```
 
 ```powershell
 NAME
-	Regenerate-AzEventGridPartnerNamespaceKey
+    Regenerate-AzEventGridPartnerNamespaceKey
 
 SYNOPSIS
-	Regenerate a shared access key of a partner namespace.
+    Regenerate a shared access key of a partner namespace.
 
 PS C:\> Regenerate-AzEventGridPartnerNamespaceKey
-	[-ResourceGroupName] <String> 
-	[-PartnerNamespaceName] <String>
-	[-KeyName] <String>
+    [-ResourceGroupName] <String> 
+    [-PartnerNamespaceName] <String>
+    [-KeyName] <String>
     [<CommonParameters>]
-	
+    
 PS C:\> Regenerate-AzEventGridPartnerNamespaceKey
-	[-ResourceId] <String> 
+    [-ResourceId] <String> 
     [<CommonParameters>]
-	
+    
 ```
 
 ## Additional information
 
 - Link to the OpenAPI (swagger) spec
 
-    - [azure-rest-api-specs-pr/EventGrid.json at main · Azure/azure-rest-api-specs-pr (github.com)](https://github.com/Azure/azure-rest-api-specs-pr/blob/main/specification/eventgrid/resource-manager/Microsoft.EventGrid/stable/2022-06-15/EventGrid.json)
+    - [azure-rest-api-specs/EventGrid.json at main · Azure/azure-rest-api-specs (github.com)](https://github.com/Azure/azure-rest-api-specs/blob/main/specification/eventgrid/resource-manager/Microsoft.EventGrid/stable/2022-06-15/EventGrid.json)
     
 - Link to any other Github work related to this request
 
