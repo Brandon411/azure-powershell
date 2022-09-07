@@ -34,17 +34,17 @@ If you just add parameter to existing cmdlets and parameter definition complies 
 
 - Main developer contacts (emails + github aliases)
 
-    - `Brandon Neff: brandonneff@microsoft.com, Brandon411`
+    - Brandon Neff: brandonneff@microsoft.com, Brandon411
 
 - PM contact (email + github alias) 
 
-    - `Roberto Cervantes Rivero: robece@microsoft.com`
-    - `Javier Fernandez: jafernan@microsoft.com`
+    - Roberto Cervantes Rivero: robece@microsoft.com
+    - Javier Fernandez: jafernan@microsoft.com
 
 - Other people who should attend a design review (email)
 
-    - `Ashraf Hamad: ahamad@microsoft.com`
-    - `Kishore Kumar Peskhar: kishp@microsoft.com`
+    - Ashraf Hamad: ahamad@microsoft.com
+    - Kishore Kumar Peskhar: kishp@microsoft.com
 
 ## High Level Scenarios
 
@@ -54,19 +54,60 @@ If you just add parameter to existing cmdlets and parameter definition complies 
 
     - Azure Event Grid's **Partner Events** allows customers to **subscribe to events** that originate in a registered system using the same mechanism they would use for any other event source on Azure, such as an Azure service. Those registered systems integrate with Event Grid are known as "partners".
 
-      This feature also enables customers to **send events** to partner systems that support receiving and routing events to customer's solutions/endpoints in their platform. Typically, partners are software-as-a-service (SaaS) or [ERP](https://en.wikipedia.org/wiki/Enterprise_resource_planning) providers, but they might be corporate platforms wishing to make their events available to internal teams.
+    This feature also enables customers to **send events** to partner systems that support receiving and routing events to customer's solutions/endpoints in their platform. Typically, partners are software-as-a-service (SaaS) or [ERP](https://en.wikipedia.org/wiki/Enterprise_resource_planning) providers, but they might be corporate platforms wishing to make their events available to internal teams.
 
-      They purposely integrate with Event Grid to realize end-to-end customer use cases that end on Azure (customers subscribe to events sent by partner) or end on a partner system (customers subscribe to Microsoft events sent by Azure Event Grid). Customers bank on Azure Event Grid to send events published by a partner to supported destinations such as webhooks, Azure Functions, Azure Event Hubs, or Azure Service Bus, to name a few.
-
-- Piping scenarios / how these cmdlets are used with existing cmdlets
-
-    - `{ SCENARIOS OUTLINED HERE }`
+    They purposely integrate with Event Grid to realize end-to-end customer use cases that end on Azure (customers subscribe to events sent by partner) or end on a partner system (customers subscribe to Microsoft events sent by Azure Event Grid). Customers bank on Azure Event Grid to send events published by a partner to supported destinations such as webhooks, Azure Functions, Azure Event Hubs, or Azure Service Bus, to name a few.
 
 - Sample of end-to-end usage
 
     - Please provide comprehensive examples that don't assume additional setup. It helps the audience understand your feature.
 
-    - `{ SAMPLE USAGE HERE }`
+Create partner registration and namespace, and then authorize based on the partner registration immutable ID. Then create a partner topic and event subscriptions.
+
+```powershell
+New-AzureEventGridPartnerRegistration
+    -ResourceGroupName rg1 
+    -Name partnerregistration1
+    -AuthorizedSubscriptionIds 54fb7d19-82e1-4195-9320-04c548504e41 1d991800-b863-4320-ba08-3f5d21ad1359
+
+New-AzEventGridPartnerNamespace
+    -ResourceGroupName rg1
+    -Name partnernamespace1
+    -Location eastus
+    -PartnerRegistrationImmutableId 627734a7-11ef-4e5f-afeb-9bee3fa58c6b
+
+PartnerAuthorization = <5, 627734a7-11ef-4e5f-afeb-9bee3fa58c6b>
+New-AzureEventGridPartnerConfiguration
+    -ResourceGroupName rg1
+    -AuthorizedPartner $PartnerAuthorization
+    -DefaultMaxExpirationTimeInDay 10
+
+Authorize-AzureEventGridPartnerConfiguration
+    -ResourceGroupName rg1
+    -PartnerRegistrationImmutableId 627734a7-11ef-4e5f-afeb-9bee3fa58c6b
+
+New-AzureEventGridChannel
+    -ResourceGroupName rg1
+    -ChannelType PartnerTopic
+    -Name channel1
+    -PartnerNamespaceName partnernamespace1
+    -PartnerTopicName partnertopic1
+    -PartnerTopicSource partnertopicsource
+    -DestinationSubscriptionId 54fb7d19-82e1-4195-9320-04c548504e41
+    -DestinationResourceGroupName rg2
+
+Activate-AzureEventGridPartnerTopic
+    -ResourceGroupName rg1
+    -Name partnertopic1
+
+New-AzEventGridPartnerTopicEventSubscription
+    -ResourceGroupName rg1
+    -PartnerTopicName partnertopic1
+    -Name eventsub1
+    -EndpointType storagequeue
+    -Endpoint $storageQueueEndpointId
+
+```
 
 ## Specific test cases
 
